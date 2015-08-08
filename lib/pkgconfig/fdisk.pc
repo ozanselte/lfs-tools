@@ -1,0 +1,11 @@
+prefix=/tools
+exec_prefix=/tools
+libdir=/tools/lib
+includedir=/tools/include
+
+Name: fdisk
+Description: fdisk library
+Version: 2.26.0
+Requires.private: uuid blkid
+Cflags: -I${includedir}/libfdisk
+Libs: -L${libdir} -lfdisk

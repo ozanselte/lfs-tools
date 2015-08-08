@@ -1,0 +1,11 @@
+prefix=/tools
+exec_prefix=/tools
+libdir=/tools/lib
+includedir=/tools/include
+
+Name: mount
+Description: mount library
+Version: 2.26.0
+Requires.private: blkid
+Cflags: -I${includedir}/libmount
+Libs: -L${libdir} -lmount

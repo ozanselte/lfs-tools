@@ -1,0 +1,1 @@
+cmd_dest/include/misc/.install := /bin/sh scripts/headers_install.sh dest/include/misc ./include/uapi/misc cxl.h; /bin/sh scripts/headers_install.sh dest/include/misc ./include/misc ; /bin/sh scripts/headers_install.sh dest/include/misc ./include/generated/uapi/misc ; for F in ; do echo "\#include <asm-generic/$$F>" > dest/include/misc/$$F; done; touch dest/include/misc/.install

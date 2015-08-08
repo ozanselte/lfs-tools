@@ -1,0 +1,1 @@
+cmd_dest/include/uapi/.install := /bin/sh scripts/headers_install.sh dest/include/uapi ./include/uapi ; /bin/sh scripts/headers_install.sh dest/include/uapi ./include ; /bin/sh scripts/headers_install.sh dest/include/uapi ./include/generated/uapi ; for F in ; do echo "\#include <asm-generic/$$F>" > dest/include/uapi/$$F; done; touch dest/include/uapi/.install
